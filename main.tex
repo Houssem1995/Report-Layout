@@ -1,0 +1,147 @@
+%------------------------------------------------Main.tex % the one that you should compile ;)
+
+\documentclass[a4paper,11pt,english,oneside]{report}
+
+%------------------------------------------------packages
+\usepackage{array,multirow,makecell}
+\usepackage{setspace}
+\usepackage{bibtopic}
+\usepackage{amsmath}
+\usepackage{ulem}
+\usepackage{babel}
+\usepackage[autolanguage]{numprint}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{titling}
+\usepackage{svg}
+\usepackage{url}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage{tabularx}
+\usepackage[top=3cm,bottom=3cm,left=2cm,right=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{amsfonts}
+\usepackage{soul}
+\usepackage{xparse}
+% \usepackage[square, comma, sort&compress]{natbib}
+\usepackage{xcolor}
+\pagestyle{fancy}
+%----packages--for-netography
+\usepackage[toc]{glossaries} % toc option puts an entry in the table of contents
+\newglossary{links}{sym}{sbl}{Netography}
+\makeglossaries
+
+
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Horizontal rule
+\usepackage{pifont} %----for customized item label
+\setlength{\headheight}{2pt} 
+\usepackage{version}  %----to use \begin{comment}
+\setlength{\parskip}{0.7em}   %--espace entre paragraphes
+\usepackage{lettrine} %----first big letter 
+%---------------------------------------------------more packages
+\usepackage{ulem}
+\usepackage{dirtytalk} %----quotation
+\newcommand{\HRule}{\textcolor{lightgray}{\rule{15.5 cm}{0.12 cm}}}
+\newcommand{\NRule}{\textcolor{lightgray}{\rule{18 cm}{0.02 cm}}}
+
+
+\fancyhead[L]{}
+%-------------------- interligne
+\renewcommand{\baselinestretch}{1.3}
+
+
+\usepackage[section]{placeins}
+
+%------------------------------format du titre de section
+\titleformat{\section}[block]
+  {\huge\bfseries}
+  {\color{gray} \thesection
+   \hspace{10pt}\vline}
+  {10pt}
+  {}
+
+
+\newcommand{\customizeNumber}{%
+  \fontsize{40}{40}\usefont{U}{eur}{b}{n}}
+
+\newcommand{\chapterNumberr}{%
+  \fontsize{12}{12}\usefont{U}{b}{n}}
+
+
+
+%---------------------------------------------Here We Go !
+
+
+\begin{document}
+
+
+%---------------------------------------------Front Page
+\input{start/front.tex}
+
+%----------------------------------------------Abstract, Signatures, Acknowledgement
+\input{start/other.tex}
+
+
+%------------------------------------------ Contents
+
+\pagenumbering{roman}
+{
+\setcounter{tocdepth}{4}
+\renewcommand{\contentsname}{Contents} % Dans le corps du document,avant la commande \tableofcontents.
+\tableofcontents}
+
+
+%--------------------figures
+{\listoffigures}
+
+
+%---------------------tables--------minimum=4
+{\listoftables } 
+
+
+
+%-------------------- Acronymsy
+\input{other/acronymes.tex}
+
+
+\pagenumbering{arabic}
+
+
+%------------------------------------------ General Introduction
+\input{other/introduction.tex}
+
+
+%------------------------------------------chapter1 General Context
+%\input{chapters/chap0.tex}
+
+%------------------------------------------chapter1 Preliminary Study
+%\input{chapters/chap1.tex}
+ 
+%------------------------------------------chapter2 Requirements Analysis and Specification
+
+%\input{chapters/chap2.tex}
+ 
+
+%------------------------------------------chapter3 Design and implementation
+
+% \input{chapters/chap3.tex}
+
+
+%\input{chapters/chap4.tex}
+
+
+%------------------------------------------General Conclusion
+
+\input{other/conclusion.tex}
+
+%----------------------------------------Bibliography & Netography
+\input{other/bibliographie.tex}
+\input{other/netographie.tex}
+
+%\input{chapters/chap4.tex}
+
+\end{document}

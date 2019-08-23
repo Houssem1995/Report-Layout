@@ -1,0 +1,77 @@
+% ---------------------------------------environment abstract
+\newenvironment*{resume}{%
+\renewcommand*{\abstractname}{\begin{center}\Huge \textbf{Abstract}\end{center}}
+\begin{abstract}
+}{\end{abstract}}
+
+% ---------------------------------------environment signatures
+
+\newenvironment*{Signatures}{%
+\renewcommand*{\abstractname}{\Huge \textbf{Signature}}
+\begin{abstract}
+}{\end{abstract}}
+%---------------------------------------environment acknowledgment
+\newenvironment*{acknowledgement}{%
+\renewcommand*{\abstractname}{\begin{flushleft}\Huge \textbf{Acknowledgement}\end{flushleft}}
+\begin{abstract}
+
+
+}{\end{abstract}}
+
+
+
+%=================================================================================
+%---------------------------------------------Abstract
+
+
+\begin{resume}
+
+\bigskip
+
+\lettrine[lines=2]{I}n this report,
+\end{resume}
+%-------------------------------------------Signature
+\begin{center} 
+
+\begin{Signatures}
+%\includegraphics[height=3 in]{images/acknowledgment_Grati.png}
+%\includegraphics[height=3 in]{images/acknowledgment_Faten.jpg}
+
+
+
+ \begin{tabular}{||m{16cm}||} 
+ \hline
+ \begin{center}
+     {Mentor :}
+ \end{center}  \\ [0.5ex] 
+ \hline\hline
+   \\ [5cm] 
+ \hline
+\end{tabular}
+
+
+
+
+ \begin{tabular}{||m{16cm}||} 
+ \hline
+ \begin{center}
+     {Pedagogic Advisor : }
+ \end{center}  \\ [0.5ex] 
+ \hline\hline
+   \\ [5cm] 
+ \hline
+\end{tabular}
+
+
+\end{Signatures}
+\end{center}
+%----------------------------------------- Acknowledgement
+\begin{acknowledgement}
+\pagenumbering{none}
+
+In god we beleive all others bring data.
+
+
+\bigskip
+
+\end{acknowledgement}

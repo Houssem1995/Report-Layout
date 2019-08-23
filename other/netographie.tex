@@ -1,0 +1,40 @@
+\renewcommand\bibname{Netography}
+\makeatletter
+\renewcommand\@bibitem[1]{\item\if@filesw \immediate\write\@auxout
+    {\string\bibcite{#1}{N\the\value{\@listctr}}}\fi\ignorespaces}% <------------
+\def\@biblabel#1{[N#1]}% <-------------------
+\makeatother
+
+\begin{thebibliography}{9}
+\bibitem{survival} 
+http://www.stat.columbia.edu/~madigan/W2025/notes/survival.pdf \newline Last seen: 03/07/2019
+
+\bibitem{survival_function}
+https://data.princeton.edu/wws509/notes/c7.pdf \newline  Last seen: 03/07/2019
+\bibitem{hazard function}
+http://people.stat.sfu.ca/\~raltman/stat402/402L32.pdf \newline Last seen: 03/07/2019
+\bibitem{conditional_survival}
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6195126 \newline Last seen: 03/07/2019
+\bibitem{non-parametric estimation}
+https://data.princeton.edu/pop509/NonParametricSurvival.pdf \newline Last seen: 06/07/2019
+\bibitem{Kaplan and Meier} 
+http://www.stat.columbia.edu/\~madigan/W2025/notes/survival.pdf p16  \newline Last seen: 06/07/2019
+\bibitem{lstm_architecture}
+http://colah.github.io/posts/2015-08-Understanding-LSTMs \newline Last seen: 07/07/2019
+\bibitem{vanashing}
+https://en.wikipedia.org/wiki/Vanishing\_gradient\_problem \newline Last seen: 08/07/2019
+\bibitem{lstm architecture}
+https://www.analyticsvidhya.com/blog/2017/12/fundamentals-of-deep-learning-introduction-to-lstm \newline Last seen: 08/07/2019
+\bibitem{tv-google}
+https://static.googleusercontent.com/media/research.google.com/de//pubs/archive/46239.pdf \newline Last seen: 03/08/2019
+
+\bibitem{likelihood}
+https://www4.stat.ncsu.edu/~laber/L3\_495.pdf
+\newline Last seen: 12/08/2019
+
+
+\bibitem{gumbel}
+https://en.wikipedia.org/wiki/Gumbel\_distribution
+\newline Last seen: 13/08/2019
+
+\end{thebibliography}
